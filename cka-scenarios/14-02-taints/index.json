@@ -30,5 +30,8 @@
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
+  },
+  "interface": {
+    "layout": "exam-desktop"
   }
 }

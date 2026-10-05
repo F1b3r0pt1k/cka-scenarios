@@ -2,7 +2,9 @@
 
 Hands-on [Killercoda](https://killercoda.com/creators) scenarios for the sample exercises in *Certified Kubernetes Administrator (CKA) Study Guide*, 2nd edition. Chapters 1–3 have no exercises, so the course starts at chapter 4. Each exercise is its own scenario, ordered by chapter in `structure.json`.
 
-Every scenario uses the two-node image `kubernetes-kubeadm-2nodes` (`controlplane` at 172.30.1.2 and `node01` at 172.30.2.2). Each step has a Check button. The check passes when its script exits 0.
+Every scenario uses the two-node image `kubernetes-kubeadm-2nodes` (`controlplane` at 172.30.1.2 and `node01` at 172.30.2.2) and opens in Killercoda's exam desktop (`interface.layout` is `exam-desktop`). Each step has a Check button. The check passes when its script exits 0.
+
+The preparation script waits until setup finishes and then returns you to the same shell. It does not exit the terminal. `k` is `kubectl`, `$do` is `--dry-run=client -o yaml`, and `$now` is `--force --grace-period=0`, which matches the usual exam shortcuts. Each step lists the exact object names, the files the check reads, and a documentation link.
 
 Tasks are written as generic exam-style work. They do not depend on the book's Vagrant labs or container images. A few labs install a standard manifest at startup (ingress-nginx, NGINX Gateway Fabric, Metrics Server, local-path-provisioner) or copy `etcdctl` onto the control plane.
 
