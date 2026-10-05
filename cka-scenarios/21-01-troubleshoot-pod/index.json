@@ -1,0 +1,33 @@
+{
+  "title": "21.1 Fix a Pod that cannot write its marker file",
+  "description": "Read the container logs, then give the process a writable path.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Make the marker file writable",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "controlplane": [
+        {
+          "file": "recorder.yaml",
+          "target": "/root/",
+          "chmod": "+w"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

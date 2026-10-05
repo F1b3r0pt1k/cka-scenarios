@@ -1,0 +1,33 @@
+{
+  "title": "11.1 Fix a Deployment manifest",
+  "description": "Correct a Deployment manifest so the object can be created.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Create the Deployment",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "controlplane": [
+        {
+          "file": "fix-me-deployment.yaml",
+          "target": "/root/",
+          "chmod": "+w"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

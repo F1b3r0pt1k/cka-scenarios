@@ -1,0 +1,160 @@
+{
+  "items": [
+    {
+      "path": "04-01-drain-node",
+      "title": "04.1 Drain a node"
+    },
+    {
+      "path": "04-02-worker-upgrade",
+      "title": "04.2 Prepare a worker for upgrade"
+    },
+    {
+      "path": "05-01-etcd-version",
+      "title": "05.1 Identify the etcd version"
+    },
+    {
+      "path": "05-02-etcd-backup",
+      "title": "05.2 Back up and restore etcd"
+    },
+    {
+      "path": "06-01-rbac-aggregation",
+      "title": "06.1 Aggregate ClusterRoles"
+    },
+    {
+      "path": "06-02-serviceaccount-api",
+      "title": "06.2 Call the API as a ServiceAccount"
+    },
+    {
+      "path": "07-01-custom-resource",
+      "title": "07.1 Install and use a CRD"
+    },
+    {
+      "path": "07-02-backup-crd",
+      "title": "07.2 Define a Backup custom resource"
+    },
+    {
+      "path": "08-01-helm-release",
+      "title": "08.1 Install and remove a Helm release"
+    },
+    {
+      "path": "08-02-kustomize",
+      "title": "08.2 Apply manifests and render a Kustomize overlay"
+    },
+    {
+      "path": "09-01-pod-namespace",
+      "title": "09.1 Run a Pod in a namespace"
+    },
+    {
+      "path": "09-02-pod-command",
+      "title": "09.2 Set a container command"
+    },
+    {
+      "path": "10-01-configmap-volume",
+      "title": "10.1 Mount a ConfigMap as a volume"
+    },
+    {
+      "path": "10-02-secret-env",
+      "title": "10.2 Expose a Secret as an environment variable"
+    },
+    {
+      "path": "11-01-fix-deployment",
+      "title": "11.1 Fix a Deployment manifest"
+    },
+    {
+      "path": "11-02-deployment-rollout",
+      "title": "11.2 Roll a Deployment forward and back"
+    },
+    {
+      "path": "12-01-manual-scale",
+      "title": "12.1 Scale a Deployment from a manifest"
+    },
+    {
+      "path": "12-02-horizontal-autoscaler",
+      "title": "12.2 Configure a HorizontalPodAutoscaler"
+    },
+    {
+      "path": "13-01-resource-requirements",
+      "title": "13.1 Set container requests and limits"
+    },
+    {
+      "path": "13-02-resource-quota",
+      "title": "13.2 Enforce a ResourceQuota"
+    },
+    {
+      "path": "13-03-limit-range",
+      "title": "13.3 Observe a LimitRange"
+    },
+    {
+      "path": "14-01-node-affinity",
+      "title": "14.1 Schedule with nodeSelector and node affinity"
+    },
+    {
+      "path": "14-02-taints",
+      "title": "14.2 Taint a node and tolerate it"
+    },
+    {
+      "path": "15-01-emptydir",
+      "title": "15.1 Share an emptyDir between containers"
+    },
+    {
+      "path": "16-01-static-pv",
+      "title": "16.1 Bind a Pod to a static PersistentVolume"
+    },
+    {
+      "path": "16-02-dynamic-pv",
+      "title": "16.2 Provision a volume with a StorageClass"
+    },
+    {
+      "path": "17-01-nodeport",
+      "title": "17.1 Expose two ports with a NodePort Service"
+    },
+    {
+      "path": "17-02-service-discovery",
+      "title": "17.2 Discover a Service from another Deployment"
+    },
+    {
+      "path": "18-01-ingress-paths",
+      "title": "18.1 Route two paths through one Ingress"
+    },
+    {
+      "path": "18-02-ingress-canary",
+      "title": "18.2 Shift a fraction of traffic with a canary Ingress"
+    },
+    {
+      "path": "19-01-gateway",
+      "title": "19.1 Route traffic with a Gateway and HTTPRoute"
+    },
+    {
+      "path": "19-02-gateway-cross-namespace",
+      "title": "19.2 Attach routes from another namespace"
+    },
+    {
+      "path": "20-01-netpol-namespaces",
+      "title": "20.1 Limit traffic between namespaces"
+    },
+    {
+      "path": "20-02-netpol-tiers",
+      "title": "20.2 Lock down a three-tier application"
+    },
+    {
+      "path": "21-01-troubleshoot-pod",
+      "title": "21.1 Fix a Pod that cannot write its marker file"
+    },
+    {
+      "path": "21-02-troubleshoot-service",
+      "title": "21.2 Fix a Service that has no endpoints"
+    },
+    {
+      "path": "21-03-metrics",
+      "title": "21.3 Find the Pod using the most memory"
+    },
+    {
+      "path": "22-01-troubleshoot-worker",
+      "title": "22.1 Restore a worker that will not take Pods"
+    },
+    {
+      "path": "22-02-troubleshoot-scheduler",
+      "title": "22.2 Repair the kube-scheduler static Pod"
+    }
+  ]
+}

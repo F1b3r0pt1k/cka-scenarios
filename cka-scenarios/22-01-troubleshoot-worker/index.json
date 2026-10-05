@@ -1,0 +1,24 @@
+{
+  "title": "22.1 Restore a worker that will not take Pods",
+  "description": "Find why node01 is unschedulable and not healthy, then schedule a Pod onto it.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Make node01 schedulable and run a Pod on it",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

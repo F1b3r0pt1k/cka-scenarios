@@ -1,0 +1,29 @@
+{
+  "title": "06.2 Call the API as a ServiceAccount",
+  "description": "Bind a ServiceAccount to Pod read access and call the API from a Pod.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Grant the ServiceAccount read access to Pods",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "List Pods, and show that delete is forbidden",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

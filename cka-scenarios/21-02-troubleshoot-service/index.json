@@ -1,0 +1,33 @@
+{
+  "title": "21.2 Fix a Service that has no endpoints",
+  "description": "Find why a Service cannot reach its Deployment and correct it.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Make the Service reach nginx",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "controlplane": [
+        {
+          "file": "broken-service.yaml",
+          "target": "/root/",
+          "chmod": "+w"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

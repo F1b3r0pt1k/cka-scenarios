@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: limited
+---
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: cpu-limit-range
+  namespace: limited
+spec:
+  limits:
+  - type: Container
+    min:
+      cpu: 200m
+    max:
+      cpu: 500m
+    default:
+      cpu: 500m
+    defaultRequest:
+      cpu: 200m

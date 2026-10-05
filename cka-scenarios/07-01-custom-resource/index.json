@@ -1,0 +1,33 @@
+{
+  "title": "07.1 Install and use a CRD",
+  "description": "Install a CustomResourceDefinition and create an object from it.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Create a Database object",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "controlplane": [
+        {
+          "file": "database-crd.yaml",
+          "target": "/root/",
+          "chmod": "+w"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
